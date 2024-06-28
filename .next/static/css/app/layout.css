@@ -1483,92 +1483,145 @@ video {
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
+
+.fancy-button {
+    background-color: red;
+    color: #fff;
+  
+    font-size: 1rem;
+    padding:  0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 0 1rem #0000002a;
+  }
+  
+  .fancy-button-text-container {
+    position: relative;
+    display: flex;
+   overflow: hidden;
+  }
+  
+  .fancy-button-char-container {
+  position: relative;
+  }
+  
+  .fancy-button-char-container span {
+    display: inline-block;
+    white-space: pre;
+    transition-property: transform;
+    transition-duration: 0.5s;
+  }
+  
+  .fancy-button-char-container span:last-child {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+  }
+  
+  body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  
+  .hoverText{
+    display: inline-block;
+    font-size: 5rem;
+  }
+  
+
+  html {  scroll-behavior: smooth;}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+strong,
+.primary-color {
+  background-image: linear-gradient(to right, #0015d3, #2090ac, #6dff5d);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.glass{
+  background: linear-gradient(135deg, rgba(55, 55, 55, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000; /* Ensure the header is above other content */
+}
+
+.hidden-header {
+  transform: translateY(-100%);
+}
+
 .first\:mt-0:first-child {
   margin-top: 0px;
 }
+
 .first\:mt-5:first-child {
   margin-top: 1.25rem;
 }
+
 .last\:mb-0:last-child {
   margin-bottom: 0px;
 }
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
+
 .hover\:bg-gradient-to-l:hover {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
+
 .hover\:bg-gradient-to-r:hover {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
+
 .hover\:from-red-400:hover {
   --tw-gradient-from: #f87171 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(248 113 113 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
+
 .hover\:from-teal-700:hover {
   --tw-gradient-from: #0f766e var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(15 118 110 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
+
 .hover\:to-cyan-400:hover {
   --tw-gradient-to: #22d3ee var(--tw-gradient-to-position);
 }
+
 .hover\:to-violet-700:hover {
   --tw-gradient-to: #6d28d9 var(--tw-gradient-to-position);
 }
+
 .hover\:text-red-500:hover {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
+
 .group:hover .group-hover\:w-full {
   width: 100%;
 }
-@media not all and (min-width: 1024px) {
 
-  .max-lg\:hidden {
-    display: none;
-  }
-
-  .max-lg\:w-full {
-    width: 100%;
-  }
-
-  .max-lg\:flex-col {
-    flex-direction: column;
-  }
-
-  .max-lg\:pb-6 {
-    padding-bottom: 1.5rem;
-  }
-
-  .max-lg\:pt-2 {
-    padding-top: 0.5rem;
-  }
-
-  .max-lg\:text-\[20px\] {
-    font-size: 20px;
-  }
-
-  .max-lg\:leading-10 {
-    line-height: 2.5rem;
-  }
-}
-@media not all and (min-width: 768px) {
-
-  .max-md\:w-10\/12 {
-    width: 83.333333%;
-  }
-
-  .max-md\:flex-col-reverse {
-    flex-direction: column-reverse;
-  }
-
-  .max-md\:leading-8 {
-    line-height: 2rem;
-  }
-}
-@media (min-width: 640px) {
+@media (max-width: 639px) {
 
   .sm\:my-2 {
     margin-top: 0.5rem;
@@ -1681,7 +1734,8 @@ video {
     line-height: 1.75rem;
   }
 }
-@media (min-width: 768px) {
+
+@media (max-width: 767px) {
 
   .md\:my-16 {
     margin-top: 4rem;
@@ -1797,7 +1851,8 @@ video {
     line-height: 1.25rem;
   }
 }
-@media (min-width: 1024px) {
+
+@media (max-width: 1023px) {
 
   .lg\:flex {
     display: flex;
@@ -1857,16 +1912,27 @@ video {
     color: rgb(59 130 246 / var(--tw-text-opacity));
   }
 }
-@media (min-width: 1280px) {
+
+@media (max-width: 1279px) {
 
   .xl\:p-20 {
     padding: 5rem;
   }
 }
-@media (min-width: 1536px) {
+
+@media (max-width: 1535px) {
 
   .\32xl\:h-\[480px\] {
     height: 480px;
   }
 }
+
+@media (max-width: 479px) {
+
+  .xs\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
 
