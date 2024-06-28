@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Logo from "./Logo";
-import { useRouter } from "next/router";
+import { usePathname, useRouter } from "next/navigation";
 import {
   DribbbleIcon,
   GithubIcon,
@@ -18,7 +18,7 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
   const CustomLink = ({ href, title, className = "" }: any) => {
-    const router = useRouter();
+    const pathname = usePathname();
     return (
       <Link href={href} className={`${className} relative group`}>
         {title}
@@ -26,7 +26,7 @@ const NavBar = () => {
         <span
           className={`h-[2px] inline-block bg-gradient-to-r from-red-500 via-orange-500 to-yellow-300 absolute left-0 -bottom-0.5 
           group-hover:w-full transition-[width] ease duration-300 ${
-            router.asPath === href ? "w-full  bg-gradient-to-r from-black to-yellow-300" : "w-0"
+            pathname === href ? "w-full  bg-gradient-to-r from-black to-yellow-300" : "w-0"
           }    dark:bg-light`}
         >
           &nbsp;
@@ -37,6 +37,7 @@ const NavBar = () => {
 
   const CustomMobileLink = ({ href, title, className = "", toggle }: any) => {
     const router = useRouter();
+    const pathname = usePathname();
 
     const handleClieck = () => {
       toggle();
@@ -49,7 +50,7 @@ const NavBar = () => {
         <span
           className={`h-[2px] inline-block bg-light absolute left-0 -bottom-0.5 
           group-hover:w-full transition-[width] ease duration-300 ${
-            router.asPath === href ? "w-full" : "w-0"
+            pathname === href ? "w-full" : "w-0"
           }    dark:bg-light`}
         >
           &nbsp;
@@ -127,9 +128,9 @@ const NavBar = () => {
         </motion.div>
       ) : null}
 
-      <div className="absolute left-[50%] top-2 translate-x-[-50%]">
+      {/* <div className="absolute left-[50%] top-2 translate-x-[-50%]">
         <Logo />
-      </div>
+      </div> */}
     </header>
   );
 };
