@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta name="viewport" content="width device-width, initial-scale=1" />
-        <link rel="icon" href="/BaanDev.png" />
+        <link rel="icon" href="/images/profile/sertImage.png" />
       </Head>
       <main className={`${montserrat.variable} font-sans w-full min-h-screen`}>
         <NavBar />
