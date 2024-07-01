@@ -3,12 +3,15 @@ import React, { Dispatch, SetStateAction, useEffect } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-// import { RootState, useAppDispatch } from "@/store/store";
+
+//import { RootState, useAppDispatch } from "@/store/store";
+
 // import {
 //   lineNotify,
 //   lineNotifySucceeded,
 // } from "@/store/slices/lineNotifySlice";
 // import { useSelector } from "react-redux";
+
 import { FiLoader } from "react-icons/fi";
 
 interface ModalProps {
@@ -29,8 +32,10 @@ const schema = yup.object().shape({
 });
 
 const ModalContact: React.FC<ModalProps> = ({ showModal, setShowModal }) => {
-  // const { status } = useSelector((state: RootState) => state.lineNotify);
-  // const dispatch = useAppDispatch();
+
+//   const { status } = useSelector((state: RootState) => state.lineNotify);
+//   const dispatch = useAppDispatch();
+
   const {
     register,
     handleSubmit,
@@ -40,13 +45,13 @@ const ModalContact: React.FC<ModalProps> = ({ showModal, setShowModal }) => {
     resolver: yupResolver(schema),
   });
 
-  // const onSubmit = (data: FormData) => {
-  //   dispatch(lineNotify(data));
-  //   setTimeout(() => {
-  //     setShowModal(false);
-  //     dispatch(lineNotifySucceeded());
-  //   }, 3000);
-  // };
+//   const onSubmit = (data: FormData) => {
+//     dispatch(lineNotify(data));
+//     setTimeout(() => {
+//       setShowModal(false);
+//       dispatch(lineNotifySucceeded());
+//     }, 3000);
+//   };
 
   useEffect(() => {
     if (!showModal) {

@@ -1,5 +1,5 @@
 {
-  "name": "prasertnuannim.github.io",
+  "name": "prasertnuannim",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,16 +10,13 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.6.0",
-    "axios": "^1.7.2",
     "framer-motion": "^11.2.12",
-    "next": "14.2.4",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "^14.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-hook-form": "^7.52.0",
     "react-icons": "^5.2.1",
-    "react-spring": "^9.7.3",
     "react-type-animation": "^3.2.0",
-    "yub": "^0.11.1",
     "yup": "^1.4.0"
   },
   "devDependencies": {
