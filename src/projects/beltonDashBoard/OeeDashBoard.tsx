@@ -18,7 +18,7 @@ const OeeDashBoard = (props: Props) => {
             viewport={{ once: false }}
             className="relative"
           >
-            <p className="text-white bg-gradient-to-r from-green-400 to-[#519457] text-center h-[30px] w-[30px] rounded-md flex items-center justify-center md:text-2xl sm:mr-2 sm:text-sm">
+            <p className="text-white bg-red-700 to-white text-center h-[30px] w-[30px] rounded-md flex items-center justify-center md:text-2xl sm:mr-2 sm:text-sm">
               1
             </p>
             <span className="absolute left-0 top-0 h-full w-full home-campaign-glowing-icon-glow-1 z-3"></span>
@@ -37,10 +37,12 @@ const OeeDashBoard = (props: Props) => {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.3 }}
             viewport={{ once: false }}
-            className="md:text-2xl font-medium text-black js-build-in-item build-in-slideX-left build-in-animate sm:text-md"
+            className="md:text-2xl font-mediumjs-build-in-item build-in-slideX-left build-in-animate sm:text-md"
             style={{ transitionDelay: "200ms" }}
           >
-            <p className="text-green-700 text-2xl md:text-lg sm:text-sm">Dashboard </p>
+            <p className="text-green-700 text-2xl md:text-lg sm:text-sm">
+              Dashboard{" "}
+            </p>
           </motion.div>
           <motion.h3
             initial={{ opacity: 0 }}
@@ -50,15 +52,21 @@ const OeeDashBoard = (props: Props) => {
             className="indent-4 md:text-sm max-md:leading-8 max-lg:leading-10 mb-5 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate"
             style={{ transitionDelay: "300ms" }}
           >
-           <span className=" text-gray-600 text-lg sm:text-sm">Web application displays data from the OEE Dashboard for IoT. There is run hour, losses hour, output, losses summary.</span>
+            <span className=" text-gray-600 text-lg sm:text-sm">
+              Web application displays data from the OEE Dashboard for IoT.
+              There is run hour, losses hour, output, losses summary.
+            </span>
             <p className="text-gray-600 text-lg sm:text-sm">
-            - Reactjs.tsx, chartjs, material UI, and redux are used to construct dashboards.
+              - Reactjs.tsx, chartjs, material UI, and redux are used to
+              construct dashboards.
             </p>
             <p className="text-gray-600 text-lg sm:text-sm">
-            - Create a backend with Node.js and establish a MySQL server connection.
+              - Create a backend with Node.js and establish a MySQL server
+              connection.
             </p>
             <p className="text-gray-600 text-lg sm:text-sm">
-            - Use the store procedure functionality in the MySQL server to assist with data table queries.
+              - Use the store procedure functionality in the MySQL server to
+              assist with data table queries.
             </p>
           </motion.h3>
         </div>
