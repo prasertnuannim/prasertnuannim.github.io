@@ -12,14 +12,14 @@ const EditMachine = (props: Props) => {
   return (
     <div className="flex relative md:pl-0 sm:pl-0">
 
-      <img
+      {/* <img
         alt=""
         aria-hidden="true"
         className=" mt-10 absolute top-0 right-0 h-auto pointer-events-none blur-sx"
         loading="lazy"
         decoding="async"
         src="/images/background/line2.png/"
-      />
+      /> */}
 
       <div className="flex items-center relative">
         <motion.div
