@@ -50,10 +50,10 @@ const about = (props: Props) => {
       </Head>
       <TransitionEffect />
       <main className="flex w-screen flex-col items-center justify-center bg-white">
-        <Layout className="mt-4 bg-white">
+        <Layout className=" bg-white">
           <AnimatedText
             text="Prasert Nuannim"
-            className="mb-2 mt-1 p-10 rounded-lg text-white text-8xl bg-gradient-to-r from-blue-900 via-blue-400 to-blue-0 lg:!text-4xl sm:!text-4xl xs:!text-2xl"
+            className="mb-2 p-10 rounded-lg text-white text-8xl bg-gradient-to-r from-blue-900 via-blue-400 to-blue-0 lg:!text-4xl sm:!text-4xl xs:!text-2xl"
           />
           <div className="flex flex-row items-center md:flex-col sm:flex-col">
             <motion.div
