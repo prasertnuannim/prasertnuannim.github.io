@@ -40,7 +40,7 @@ const OeeDashBoard = (props: Props) => {
             className="md:text-2xl font-mediumjs-build-in-item build-in-slideX-left build-in-animate sm:text-md"
             style={{ transitionDelay: "200ms" }}
           >
-            <p className="text-green-700 text-2xl md:text-lg sm:text-sm">
+            <p className="text-green-700 text-2xl font-bold md:text-lg sm:text-sm">
               Dashboard{" "}
             </p>
           </motion.div>

@@ -35,6 +35,7 @@ const config: Config = {
       xs: { max: "479px" },
     }
   },
+  
   plugins: [],
 };
 export default config;

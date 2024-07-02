@@ -7,7 +7,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/ui/TransitionEffect";
 import OeeDashBoard from "@/projects/beltonDashBoard/OeeDashBoard";
-// import MonitorMachine from "@/components/projects/beltonMonitorMachine/MonitorMachine";
+ import MonitorMachine from "@/projects/beltonMonitorMachine/MonitorMachine";
 // import EsdTester from "@/components/projects/beltonESD/EsdTester";
 
 type Props = {};
@@ -39,9 +39,9 @@ const Projects: React.FC<Props> = () => {
             className="h-[3px] w-full mb-4 rounded-md bg-gradient-to-r from-cyan-500 to-yellow-500"
           />
 
-          {/* <div  className="grid w-full grid-cols-1 gap-10 mt-5">
+          <div  className="grid w-full grid-cols-1 gap-10 mt-5">
             <MonitorMachine />
-          </div> */}
+          </div>
 
           <motion.div
             initial={{ width: 1 }}

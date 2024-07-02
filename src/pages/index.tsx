@@ -62,7 +62,7 @@ export default function Home() {
                   ]}
                   wrapper="strong"
                   speed={50}
-                  repeat={Infinity}
+                 // repeat={Infinity}
                 />
               </p>
               <p className="text-xl md:text-lg font-sans">
