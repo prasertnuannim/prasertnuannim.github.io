@@ -25,7 +25,7 @@ const Projects: React.FC<Props> = () => {
         <Layout className="bg-white">
           <AnimatedText
             text="My Projects"
-            className=" p-10 rounded-lg text-white text-2xl bg-gradient-to-r from-teal-700 to-yellow-500 lg:!text-4xl sm:!text-4xl xs:!text-2xl sm:mb-2"
+            className=" p-10 rounded-lg text-white text-6xl bg-gradient-to-r from-teal-700 to-yellow-500 lg:!text-4xl sm:!text-4xl xs:!text-2xl sm:mb-2"
           />
 
           <div className="grid w-full grid-cols-1 gap-10">
