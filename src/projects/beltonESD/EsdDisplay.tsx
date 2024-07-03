@@ -11,7 +11,7 @@ const EsdDisplay = (props: Props) => {
   };
 
   return (
-    <div className="mb-10 mt-10">
+    <div className="mb-10">
       <div className="flex flex-col relative  mb-5 rounded-md md:pl-10 sm:p-0">
         <div className="flex items-center justify-between sm:text-[14px]">
           <div className=" flex flex-row space-x-6 py-4 mb-2 w-full md:flex-col md:space-x-0">
@@ -19,17 +19,17 @@ const EsdDisplay = (props: Props) => {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2, type: "tween" }}
-              className="flex w-1/2 rounded-md shadow-lg shadow-gray-500 bg-blue-500 md:w-full"
+              className="flex w-1/2 rounded-md shadow-lg shadow-gray-500 bg-gradient-to-r from-green-500 to-red-700 md:w-full"
             >
               <div className="mb-4 p-5 text-2xl max-lg:text-[20px] text-[#7d8590]">
                 <span className="font-semibold text-light sm:text-[16px]">
                  Employee Data
                 </span>{" "}
-                <p className=" mt-2 text-light text-sm indent-8 sm:text-sm sm:indent-4">
+                <p className=" mt-2 text-light text-lg indent-8 sm:text-sm sm:indent-4">
                 Use the data grid to add, edit, remove, and display employee data.
                 </p>
                 <img
-                    src="/images/beltonESD/employeeState.png"
+                    src="/images/projects/beltonESD/employeeState.png"
                     alt=""
                     loading="lazy"
                     decoding="async"
@@ -42,17 +42,17 @@ const EsdDisplay = (props: Props) => {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2, type: "tween" }}
-              className="flex w-1/2 rounded-md shadow-lg shadow-gray-700 bg-red-700 md:w-full md:mt-6"
+              className="flex w-1/2 rounded-md shadow-lg shadow-gray-500 bg-gradient-to-l from-blue-500 to-red-700 md:w-full md:mt-6"
             >
               <div className="mb-4 p-5 text-2xl max-lg:text-[20px]  text-[#7d8590]">
                 <span className="font-semibold text-light sm:text-[16px]">
                   ESD Tester Display
                 </span>{" "}
-                <p className=" mt-2 text-light text-sm  indent-8 sm:text-sm sm:indent-4">
+                <p className=" mt-2 text-light text-lg  indent-8 sm:text-sm sm:indent-4">
                 ESD tester apparatus wait for the user is employee number, verify permissions to access the production line, and count the number of dots to verify the value from the ESD machine before responding to BD.
                 </p>
                 <img
-                    src="/images/beltonESD/esdDisplay.jpg"
+                    src="/images/projects/beltonESD/esdDisplay.jpg"
                     alt=""
                     loading="lazy"
                     decoding="async"

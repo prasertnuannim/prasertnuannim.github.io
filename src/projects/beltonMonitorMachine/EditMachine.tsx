@@ -45,7 +45,7 @@ const EditMachine = (props: Props) => {
                 <span className="font-semibold text-yellow-700 sm:text-[16px] ">
                 Modify Data Machine
                 </span>{" "}
-                <p className="text-gray-500 text-sm indent-8 sm:text-sm sm:indent-4">
+                <p className="text-gray-500 text-lg indent-8 sm:text-sm sm:indent-4">
                 May sign in to the program to modify the state machine or alter the data by using a permission account.
                 </p>
               </div>
@@ -61,7 +61,7 @@ const EditMachine = (props: Props) => {
                   className="w-full top-[-100px] right-7 shadow-2xl "
                 >
                   <img
-                    src="/images/beltonMonitorMachine/changeState.png"
+                    src="/images/projects/beltonMonitorMachine/changeState.png"
                     alt=""
                     loading="lazy"
                     decoding="async"

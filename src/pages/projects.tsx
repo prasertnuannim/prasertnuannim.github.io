@@ -5,15 +5,14 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import TransitionEffect from "@/components/ui/TransitionEffect";
+import TransitionEffect from "@/components/TransitionEffect";
 import OeeDashBoard from "@/projects/beltonDashBoard/OeeDashBoard";
- import MonitorMachine from "@/projects/beltonMonitorMachine/MonitorMachine";
+import MonitorMachine from "@/projects/beltonMonitorMachine/MonitorMachine";
 import EsdTester from "@/projects/beltonESD/EsdTester";
 
 type Props = {};
 
 const Projects: React.FC<Props> = () => {
-
   return (
     <>
       <Head>
@@ -25,13 +24,13 @@ const Projects: React.FC<Props> = () => {
         <Layout className="bg-white">
           <AnimatedText
             text="My Projects"
-            className=" p-10 rounded-lg text-white text-6xl bg-gradient-to-r from-teal-700 to-yellow-500 lg:!text-4xl sm:!text-4xl xs:!text-2xl sm:mb-2"
+            className="mb-10 p-10 rounded-lg text-white text-4xl bg-gradient-to-r from-teal-700 to-yellow-500 lg:!text-4xl sm:!text-4xl xs:!text-2xl sm:mb-2"
           />
 
           <div className="grid w-full grid-cols-1 gap-10">
             <OeeDashBoard />
           </div>
-          
+
           <motion.div
             initial={{ width: 1 }}
             whileInView={{ width: "100%" }}
@@ -39,7 +38,7 @@ const Projects: React.FC<Props> = () => {
             className="h-[3px] w-full mb-4 rounded-md bg-gradient-to-r from-cyan-500 to-yellow-500"
           />
 
-          <div  className="grid w-full grid-cols-1 gap-10 mt-5">
+          <div className="grid w-full grid-cols-1 gap-10 mt-5">
             <MonitorMachine />
           </div>
 

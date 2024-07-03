@@ -1,13 +1,19 @@
-import { motion } from 'framer-motion'
-import React from 'react'
+/* eslint-disable @next/next/no-img-element */
 
-type Props = {}
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+
+type Props = {};
 
 const AdminAccount = (props: Props) => {
-    const lineVariant = {
-        hidden: { height: 0 },
-        show: { height: "100%" },
-      };
+  const [adminPositionIndex, setAdminPositionIndex] = useState([0, 1, 2, 3, 4]);
+
+  const lineVariant = {
+    hidden: { height: 0 },
+    show: { height: "100%" },
+  };
+
   return (
     <div className="mb-10">
       <div className="flex flex-col relative bg-gradient-to-r from-gray-700 to-blue-700 mb-5 rounded-md md:pl-10 sm:pl-0">
@@ -33,7 +39,7 @@ const AdminAccount = (props: Props) => {
                   className="w-full top-[-100px] right-7 shadow-2xl "
                 >
                   <img
-                    src="/images/beltonMonitorMachine/adminAccounts.png"
+                    src="/images/projects/beltonMonitorMachine/adminAccounts.png"
                     alt=""
                     loading="lazy"
                     decoding="async"
@@ -52,10 +58,10 @@ const AdminAccount = (props: Props) => {
               className="md:pr-6"
             >
               <div className="mb-4 pl-5 pr-5 text-2xl max-lg:text-[20px] max-md:w-10/12 lg:w-full w-full sm:w-full text-[#7d8590]">
-                <span className="font-semibold text-blue-700 sm:text-[16px]">
+                <span className="font-semibold text-yellow-700 sm:text-[16px]">
                   Admin Profile
                 </span>{" "}
-                <p className=" mt-2 text-gray-500 text-sm  indent-8 sm:text-sm sm:indent-4">
+                <p className=" mt-2 text-white text-lg  indent-8 sm:text-sm sm:indent-4">
                   Admin profile can be created, edited, deleted, granted
                   permissions and reset password. utilize the data table to see
                   every user account.
@@ -65,8 +71,16 @@ const AdminAccount = (props: Props) => {
           </div>
         </div>
       </div>
-      </div>
-  )
-}
 
-export default AdminAccount
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.5, type: "tween" }}
+        className="rounded-2xl shadow-lg shadow-gray-500"
+      >
+      </motion.div>
+    </div>
+  );
+};
+
+export default AdminAccount;

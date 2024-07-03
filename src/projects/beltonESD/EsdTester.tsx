@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import EsdDisplay from "./EsdDisplay";
 
+
 type Props = {};
 
 const EsdTester = (props: Props) => {
@@ -18,7 +19,7 @@ const EsdTester = (props: Props) => {
             viewport={{ once: false }}
             className="relative"
           >
-            <p className="text-white bg-green-600 text-center h-[30px] w-[30px] rounded-md flex items-center justify-center md:text-2xl sm:mr-2 sm:text-sm">
+            <p className="text-white bg-gradient-to-r from-red-500 to-red-700 text-center h-[30px] w-[30px] rounded-md flex items-center justify-center md:text-2xl sm:mr-2 sm:text-sm">
               3
             </p>
             <span className="absolute left-0 top-0 h-full w-full home-campaign-glowing-icon-glow-1 z-3"></span>
@@ -40,9 +41,7 @@ const EsdTester = (props: Props) => {
             className="md:text-2xl font-medium text-black js-build-in-item build-in-slideX-left build-in-animate sm:text-md"
             style={{ transitionDelay: "200ms" }}
           >
-            <p className="text-red-700 text-2xl md:text-lg sm:text-sm">
-              ESD Tester System
-            </p>
+            <p className="text-red-700 text-2xl md:text-lg sm:text-sm">ESD Tester System</p>
           </motion.div>
           <motion.h3
             initial={{ opacity: 0 }}
@@ -53,19 +52,16 @@ const EsdTester = (props: Props) => {
             style={{ transitionDelay: "300ms" }}
           >
             <span className="text-gray-600 text-lg sm:text-sm">
-              The Anti-Static ESD Access Control Tester is designed to work with
-              outdated hardware, use a microcontroller to monitor employee
-              status, operate door, and save recode in a database.
+            The Anti-Static ESD Access Control Tester is designed to work with outdated hardware, use a microcontroller to monitor employee status, operate door, and save recode in a database.
             </span>
             <p className="text-gray-500 text-lg sm:text-sm">
-              - ESD Tester is developed using Redux Toolkit, Tailwind CSS,
-              NextJS, NextAuth.
+            - ESD Tester is developed using Redux Toolkit, Tailwind CSS, NextJS, NextAuth.
             </p>
             <p className="text-gray-500 text-lg sm:text-sm">
-              - Develop a backend using Node.js and connect to a MySQL server.
+            - Develop a backend using Node.js and connect to a MySQL server.
             </p>
             <p className="text-gray-500 text-lg sm:text-sm">
-              - Raspberry pi use python script.
+            - Raspberry pi use python script.
             </p>
           </motion.h3>
         </div>
@@ -75,17 +71,19 @@ const EsdTester = (props: Props) => {
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ type: "tween" }}
-        className="object-center"
+         className="object-center"
       >
         <img
           className="w-full h-auto items-center justify-center shadow-2xl mb-8"
-          alt=""
-          src="/images/beltonESD/esdTesterData.png"
+         alt=""
+          src="/images/projects/beltonESD/esdTesterData.png"
         />
       </motion.div>
 
-      <EsdDisplay />
-    </div>
+      <EsdDisplay/>
+      
+      </div>
+  
   );
 };
 

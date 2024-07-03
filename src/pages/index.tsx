@@ -5,7 +5,7 @@ import Layout from "@/components/Layout";
 import profilePic from "../../public/images/profile/sertImage.png";
 import splitStringUsingRegex from "@/utils/splitStringUsingRegex";
 import { useState } from "react";
-// import TransitionEffect from "@/components/ui/TransitionEffect";
+import TransitionEffect from "@/components/TransitionEffect";
 import { TypeAnimation } from "react-type-animation";
 import { DiCss3, DiJavascript, DiNodejsSmall, DiPython, DiReact } from "react-icons/di";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
@@ -14,7 +14,6 @@ import { GrMysql } from "react-icons/gr";
 import { SiArduino } from "react-icons/si";
 import Tooltip from "@/components/ui/Tooltip";
 import ModalContact from "@/components/ui/ModalContact";
-import TransitionEffect from "@/components/ui/TransitionEffect";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,7 +33,7 @@ export default function Home() {
       </Head>
       <TransitionEffect />
       <main className="flex flex-col items-center justify-center ">
-        <Layout className="pt-20 lg:pt-20 md:pt-6 sm:pt-4 bg-white">
+        <Layout className=" bg-white">
           <div className="flex flex-row items-center justify-center md:flex-col sm:flex-col">
             <div className="w-1/2 md:w-full">
               <Image
@@ -62,7 +61,7 @@ export default function Home() {
                   ]}
                   wrapper="strong"
                   speed={50}
-                 // repeat={Infinity}
+                  repeat={Infinity}
                 />
               </p>
               <p className="text-xl md:text-lg font-sans">

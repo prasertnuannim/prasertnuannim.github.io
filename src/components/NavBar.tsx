@@ -79,7 +79,7 @@ const NavBar = () => {
           <CustomLink href="/" title="Home" className="mr-4 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-violet-500" />
           <CustomLink href="/about" title="About" className="mx-4 bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-green-500" />
           <CustomLink href="/projects" title="Projects" className="mx-4 bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-500" />
-          {/* <CustomLink href="/demo" title="Demo" className="mx-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-gray-500" /> */}
+          
         </nav>
       </div>
 
@@ -107,17 +107,10 @@ const NavBar = () => {
               className="mx-4"
               toggle={handleClieck}
             />
-
-          {/* <CustomMobileLink
-              href="/scroll"
-              title="Demo"
-              className="mx-4"
-              toggle={handleClieck}
-            /> */}
-
           </nav>
         </motion.div>
       ) : null}
+
     </header>
   );
 };

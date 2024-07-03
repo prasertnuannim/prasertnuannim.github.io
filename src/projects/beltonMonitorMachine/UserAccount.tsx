@@ -36,7 +36,7 @@ const UserAccount = (props: Props) => {
                 <span className="font-semibold text-blue-700 sm:text-[16px]">
                   User Profile
                 </span>{" "}
-                <p className=" mt-2 text-black text-sm  indent-8 sm:text-sm sm:indent-4">
+                <p className=" mt-2 text-black text-lg  indent-8 sm:text-sm sm:indent-4">
                   User profiles have the ability to change the status and data
                   of machines.
                 </p>
@@ -54,7 +54,7 @@ const UserAccount = (props: Props) => {
                   className="w-full top-[-100px] right-7 shadow-2xl"
                 >
                   <img
-                    src="/images/beltonMonitorMachine/userAccount.png"
+                    src="/images/projects/beltonMonitorMachine/userAccount.png"
                     alt=""
                     loading="lazy"
                     decoding="async"

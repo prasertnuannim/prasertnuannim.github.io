@@ -1,10 +1,12 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import Head from "next/head";
-import { Montserrat } from "next/font/google";
 import NavBar from "@/components/NavBar";
-import { useRouter } from "next/router";
+import { Montserrat } from "next/font/google";
+import Head from "next/head";
 import { AnimatePresence } from "framer-motion";
+import { useRouter } from "next/router";
+import { Provider } from "react-redux";
+import { store } from "@/store/store";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -20,10 +22,12 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/images/profile/sertImage.png" />
       </Head>
       <main className={`${montserrat.variable} font-sans w-full min-h-screen`}>
-        <NavBar />
-        <AnimatePresence mode="wait">
-          <Component key={router.asPath} {...pageProps} />
-        </AnimatePresence>
+        <Provider store={store}>
+          <NavBar />
+          <AnimatePresence mode="wait">
+            <Component key={router.asPath} {...pageProps} />
+          </AnimatePresence>
+        </Provider>
       </main>
     </>
   );

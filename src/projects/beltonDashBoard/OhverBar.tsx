@@ -11,14 +11,15 @@ const OhverBar = (props: Props) => {
   };
   return (
     <div className="flex relative md:pl-10 sm:pl-0">
-      {/* <img
+
+      <img
         alt=""
         aria-hidden="true"
         className=" mt-10 absolute top-0 right-0 h-auto pointer-events-none blur-sx"
         loading="lazy"
         decoding="async"
         src="/images/background/line1.png/"
-      /> */}
+      />
 
       <div className="flex items-center relative">
         <motion.div
@@ -31,6 +32,7 @@ const OhverBar = (props: Props) => {
         ></motion.div>
       </div>
       <div className="lg:pl-24 md:pl-16 pl-6 sm:pl-0">
+
         <div className="flex relative max-md:flex-col-reverse my-8 items-center lg:gap-x-5 sm:my-2 md:my-16 pb-6 md:pb-20 md:flex-row sm:flex-col">
           <div className="py-4 mb-2 w-full">
             <motion.div
@@ -39,13 +41,12 @@ const OhverBar = (props: Props) => {
               transition={{ delay: 0.2, type: "tween" }}
               className="md:pr-6"
             >
-              <div className="mb-4 justify-start text-[20px] max-lg:text-[20px] max-md:w-10/12 lg:w-full w-full sm:w-full">
-                <span className="font-semibold sm:text-[16px] ">
+              <div className="mb-4 text-2xl max-lg:text-[20px] max-md:w-10/12 lg:w-full w-full sm:w-full text-[#7d8590]">
+                <span className="font-semibold text-yellow-700 sm:text-[16px] ">
                   Custom Ohver Bar Chat.
                 </span>{" "}
-                <p className="text-gray-500 text-lg  indent-8 sm:text-sm sm:indent-4">
-                  The main bar chart can be viewed in detail by hovering the
-                  mouse over the desired bar.
+                <p className="text-black text-lg font-bold  indent-8 sm:text-sm sm:indent-4">
+                The main bar chart can be viewed in detail by hovering the mouse over the desired bar.
                 </p>
               </div>
             </motion.div>
@@ -60,7 +61,7 @@ const OhverBar = (props: Props) => {
                   className="w-full top-[-100px] right-7 shadow-2xl "
                 >
                   <img
-                    src="/images/beltonDashBoard/OeeDashBoardLossesHour.jpg"
+                    src="/images/projects/beltonDashBoard/OeeDashBoardLossesHour.jpg"
                     alt=""
                     loading="lazy"
                     decoding="async"
@@ -71,6 +72,7 @@ const OhverBar = (props: Props) => {
             </div>
           </div>
         </div>
+
       </div>
     </div>
   );
