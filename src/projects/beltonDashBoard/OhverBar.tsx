@@ -11,14 +11,14 @@ const OhverBar = (props: Props) => {
   };
   return (
     <div className="flex relative md:pl-10 sm:pl-0">
-      <img
+      {/* <img
         alt=""
         aria-hidden="true"
         className=" mt-10 absolute top-0 right-0 h-auto pointer-events-none blur-sx"
         loading="lazy"
         decoding="async"
         src="/images/background/line1.png/"
-      />
+      /> */}
 
       <div className="flex items-center relative">
         <motion.div
@@ -39,8 +39,8 @@ const OhverBar = (props: Props) => {
               transition={{ delay: 0.2, type: "tween" }}
               className="md:pr-6"
             >
-              <div className="mb-4 justify-start max-lg:text-[20px] max-md:w-10/12 lg:w-full w-full sm:w-full">
-                <span className="font-semibold text-yellow-700 sm:text-[16px] ">
+              <div className="mb-4 justify-start text-[20px] max-lg:text-[20px] max-md:w-10/12 lg:w-full w-full sm:w-full">
+                <span className="font-semibold sm:text-[16px] ">
                   Custom Ohver Bar Chat.
                 </span>{" "}
                 <p className="text-gray-500 text-lg  indent-8 sm:text-sm sm:indent-4">

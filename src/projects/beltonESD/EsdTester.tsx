@@ -18,7 +18,7 @@ const EsdTester = (props: Props) => {
             viewport={{ once: false }}
             className="relative"
           >
-            <p className="text-white bg-gradient-to-r from-red-500 to-red-700 text-center h-[30px] w-[30px] rounded-md flex items-center justify-center md:text-2xl sm:mr-2 sm:text-sm">
+            <p className="text-white bg-green-600 text-center h-[30px] w-[30px] rounded-md flex items-center justify-center md:text-2xl sm:mr-2 sm:text-sm">
               3
             </p>
             <span className="absolute left-0 top-0 h-full w-full home-campaign-glowing-icon-glow-1 z-3"></span>

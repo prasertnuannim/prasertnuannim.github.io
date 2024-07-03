@@ -80,7 +80,7 @@ const ModalContact: React.FC<ModalProps> = ({ showModal, setShowModal }) => {
             <span className="mr-1 bg-red-600 text-white font-bold rounded-sm pr-1 pl-1">
               Tel{" "}
             </span>{" "}
-            083-009-973 {" "}
+            083-009-9743 {" "}
             <span className="mr-1 ml-10 bg-green-600 text-white font-bold rounded-sm pr-1 pl-1">
             Line
             </span>{" "}
