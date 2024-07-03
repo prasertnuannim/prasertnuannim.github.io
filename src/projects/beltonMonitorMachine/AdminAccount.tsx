@@ -16,7 +16,7 @@ const AdminAccount = (props: Props) => {
 
   return (
     <div className="mb-10">
-      <div className="flex flex-col relative bg-gradient-to-r from-gray-700 to-blue-700 mb-5 rounded-md md:pl-10 sm:pl-0">
+      <div className="flex flex-col relative bg-gradient-to-r from-gray-800 to-blue-800 mb-5 rounded-md md:pl-10 sm:pl-0">
         <div className="flex items-center relative">
           <motion.div
             variants={lineVariant}
