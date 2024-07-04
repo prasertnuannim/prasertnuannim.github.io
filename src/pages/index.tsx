@@ -28,8 +28,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Prasert Nuannim</title>
-        <meta name="" content="" />
+        <title>Prasert Nuannim | Home</title>
+        <meta name="Prasert Nuannim" content="Prasert Nuannim" />
       </Head>
       <TransitionEffect />
       <main className="flex flex-col items-center justify-center ">

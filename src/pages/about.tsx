@@ -45,8 +45,8 @@ const about = (props: Props) => {
   return (
     <>
       <Head>
-        <title>Sert | About Page</title>
-        <meta name="" content="" />
+        <title>Prasert Nuannim | About</title>
+        <meta name="Prasert Nuannim" content="Prasert Nuannim" />
       </Head>
       <TransitionEffect />
       <main className="flex w-screen flex-col items-center justify-center bg-white">

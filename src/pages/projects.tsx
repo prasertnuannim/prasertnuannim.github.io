@@ -16,8 +16,8 @@ const Projects: React.FC<Props> = () => {
   return (
     <>
       <Head>
-        <title>Sert | Projects Page</title>
-        <meta name="description" content="" />
+        <title>Prasert Nuannim | Projects</title>
+        <meta name="Prasert Nuannim" content="Prasert Nuannim" />
       </Head>
       <TransitionEffect />
       <main className="flex w-screen flex-col items-center justify-center bg-white">
