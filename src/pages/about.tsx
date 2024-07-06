@@ -62,7 +62,7 @@ const about = (props: Props) => {
             >
               <p className="indent-8 text-gray-500 text-xl font-medium md:text-md md:p-0 sm:text-md">
                 Greetings, I'm Sert, a highly motivated{" "}
-                <span className="text-blue-700">system administrator</span> with
+                <span className="text-blue-700">IT Support</span> with
                 over a 10+ years  of expertise overseeing the technical and
                 functional upkeep and operation of designated systems.
               </p>

@@ -127,7 +127,7 @@ const Experience: React.FC = () => {
             ]}
           />
           <Details
-            position="System Administrator"
+            position="IT Support"
             company="Belton"
             companyLink="https://www.beltontechnology.com/en/index.html"
             time="2013-Present"
