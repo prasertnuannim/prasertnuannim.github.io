@@ -14,6 +14,7 @@ import { GrMysql } from "react-icons/gr";
 import { SiArduino } from "react-icons/si";
 import Tooltip from "@/components/ui/Tooltip";
 import ModalContact from "@/components/ui/ModalContact";
+import { FcComboChart, FcPieChart } from "react-icons/fc";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -76,6 +77,7 @@ export default function Home() {
                   <Tooltip content="Next Js"  className="w-[80px]"><RiNextjsFill className="text-black"/></Tooltip>
                   <Tooltip content="Redux"  className="w-[80px]"><TbBrandRedux className="text-violet-700"/></Tooltip>
                   <Tooltip content="Taikwide Css"  className="w-[100px]"><RiTailwindCssFill className="text-sky-500" /></Tooltip>
+                  <Tooltip content="ChartJs"  className="w-[100px]"><FcPieChart className="text-sky-500" /></Tooltip>
                   <Tooltip content="Node Js"  className="w-[80px]"><DiNodejsSmall className="text-green-500" /></Tooltip>
                   <Tooltip content="My SQL"  className="w-[80px]"><GrMysql className="text-blue-500"/></Tooltip>
                   <Tooltip content="Python"  className="w-[80px]"><DiPython className="text-yellow-500"/></Tooltip>
