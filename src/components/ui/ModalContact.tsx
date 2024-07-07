@@ -82,6 +82,12 @@ const ModalContact: React.FC<ModalProps> = ({ showModal, setShowModal }) => {
             s_er_t{" "}
           </p>
         </div>
+        <div className="p-3 text-md font-semibold bg-clip-text text-transparent bg-gradient-to-r from-sky-500  to-green-700">
+        <span className="mr-3 bg-sky-600 text-white font-bold rounded-sm pr-1 pl-1">
+            Email
+            </span>{" "}
+            nuannimprasert@gmail.com
+        </div>
         
         {/* <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mt-4">
