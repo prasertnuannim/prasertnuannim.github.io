@@ -73,11 +73,11 @@ export default function Home() {
                   My Tech Stack
                 </p>
                 <div className="grid grid-cols-6 gap-1 text-4xl space-x-2 space-y-2 md:space-x-1 md:space-y-1">
-                  <Tooltip content="React Js" className="w-[80px]"><DiReact className="text-sky-500" /></Tooltip>
+                  <Tooltip content="React Js" className="w-[80px]"><DiReact className="text-sky-500 mt-2" /></Tooltip>
                   <Tooltip content="Next Js"  className="w-[80px]"><RiNextjsFill className="text-black"/></Tooltip>
                   <Tooltip content="Redux"  className="w-[80px]"><TbBrandRedux className="text-violet-700"/></Tooltip>
                   <Tooltip content="Taikwide Css"  className="w-[100px]"><RiTailwindCssFill className="text-sky-500" /></Tooltip>
-                  <Tooltip content="ChartJs"  className="w-[100px]"><FcPieChart className="text-sky-500" /></Tooltip>
+                  <Tooltip content="Chart Js"  className="w-[100px]"><FcPieChart className="text-sky-500" /></Tooltip>
                   <Tooltip content="Node Js"  className="w-[80px]"><DiNodejsSmall className="text-green-500" /></Tooltip>
                   <Tooltip content="My SQL"  className="w-[80px]"><GrMysql className="text-blue-500"/></Tooltip>
                   <Tooltip content="Python"  className="w-[80px]"><DiPython className="text-yellow-500"/></Tooltip>
