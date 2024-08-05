@@ -50,14 +50,14 @@ export default function Home() {
 
             <div className="w-1/2 text-gray-500 md:w-full ">
               <p className="text-2xl md:text-2xl font-bold">
-                Hi I am Sert <br />
+                Hi. I am Sert. <br />
                 <TypeAnimation
                   sequence={[
-                    "Full Stack Developer",
+                    "Full Stack Developer.",
                     2000,
-                    "System Administrator",
+                    "System Administrator.",
                     2000,
-                    "IoT Developer",
+                    "IoT Developer.",
                     2000,
                   ]}
                   wrapper="strong"
@@ -66,7 +66,7 @@ export default function Home() {
                 />
               </p>
               <p className="text-xl md:text-lg font-sans">
-                With a 5+ years of experience.
+                With 3+ years of experience.
               </p>
               <div className="glass mt-5 p-5">
                 <p className=" text-xl  font-bold mb-4 bg-clip-text text-transparent text-center bg-gradient-to-r from-red-500 to-blue-500">

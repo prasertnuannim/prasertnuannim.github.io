@@ -117,7 +117,7 @@ const Experience: React.FC = () => {
             position="IoT Development Services"
             company="Belton"
             companyLink="https://www.beltontechnology.com/en/index.html"
-            time="2018-Present"
+            time="2018-2024"
             address="Nava Nakorn Industrial Estate Zone 1, Pathumthani"
             work={[
               " - Establish a wifi network and API domain inside the company to facilitate IoT projects.",
@@ -130,7 +130,7 @@ const Experience: React.FC = () => {
             position="IT Support"
             company="Belton"
             companyLink="https://www.beltontechnology.com/en/index.html"
-            time="2013-Present"
+            time="2013-2024"
             address="Nava Nakorn Industrial Estate Zone 1, Pathumthani"
             work={[
               " - Worked on a team responsible for installing and solving office and production computer problems.",
