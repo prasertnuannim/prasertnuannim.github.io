@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST="{\"sections/venue.tsx -> @/components/map\":{\"id\":\"sections/venue.tsx -> @/components/map\",\"files\":[]}}"
