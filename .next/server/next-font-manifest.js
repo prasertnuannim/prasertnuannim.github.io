@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/sert/Documents/GitHub/prasertnuannim.github.io/src/app/layout\":[\"static/media/bec0760bb0dd8438-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
+self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/sert/Documents/GitHub/prasertnuannim.github.io/src/app/layout":["static/media/bec0760bb0dd8438-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
