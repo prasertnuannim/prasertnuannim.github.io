@@ -23,10 +23,16 @@
       "static/chunks/pages/_app-6a626577ffa902a4.js"
     ],
     "/_error": [
+<<<<<<< Updated upstream
       "static/chunks/webpack-eaafa6039b7579e0.js",
       "static/chunks/framework-f66176bb897dc684.js",
       "static/chunks/main-c2c9489e10ebb8cf.js",
       "static/chunks/pages/_error-1be831200e60c5c0.js"
+=======
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/_error.js"
+>>>>>>> Stashed changes
     ]
   },
   "ampFirstPages": []
