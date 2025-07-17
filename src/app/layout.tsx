@@ -25,8 +25,6 @@ export const metadata = {
     type: "website",
   },
 };
-
-
 const kalam = Kalam({
   variable: "--font-kalam",
   subsets: ["latin"],
@@ -46,9 +44,9 @@ export default async function RootLayout({
   const messages = await getMessages();
   const locale = await getLocale();
   return (
-    <html lang={locale} className={`${kalam.variable} ${mitr.variable}`}>
+    <html className={`${kalam.variable} ${mitr.variable}`}>
       <body className="antialiased">
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <SwitchLanguage />
           {children}
         </NextIntlClientProvider>
